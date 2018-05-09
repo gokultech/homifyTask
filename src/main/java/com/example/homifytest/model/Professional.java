@@ -1,6 +1,8 @@
 package com.example.homifytest.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import org.hibernate.mapping.List;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -55,6 +57,12 @@ public class Professional implements Serializable {
     
     @NotBlank
     private String longitude;
+    
+    @NotBlank
+    private List projects1;
+    
+    @NotBlank
+    private String types;
  
 
     @Column(nullable = false, updatable = false)
@@ -66,6 +74,8 @@ public class Professional implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
     private Date updatedAt;
+
+	private List projects;
 
 	public Long getId() {
 		return id;
@@ -187,6 +197,22 @@ public class Professional implements Serializable {
 		this.updatedAt = updatedAt;
 	}
 
-    // Getters and Setters ... (Omitted for brevity)
+	public List getProjects() {
+		return projects;
+	}
+
+	public void setProjects(List projects) {
+		this.projects = projects;
+	}
+
+	public String getTypes() {
+		return types;
+	}
+
+	public void setTypes(String types) {
+		this.types = types;
+	}
+
+    // Getters and Setters ... 
     
 }
