@@ -36,4 +36,34 @@ Here is what this little application demonstrates:
 
 * Automatic CRUD functionality against the data source using Spring Repository pattern
 
+## create a new professional 
+
+ POST /api/notes API
+ 
+ {
+"header"      : "sample",
+"Firstname"   : "xxx",
+"lastname"    : "yyy",
+"username"    : "xxxyyy",
+"companyname" : "homify",
+"phone"       : "123",
+"email"       :"adb@gmail.com",
+"website"     : "aaa.com",
+"city"        : "berlin",
+"country"     : "Germany",
+"latitude"    : "32.0",
+"longitude"   : "2.0",
+"project"     : "zzz"
+}
+
+## Tasks which are not completed
+
+1. Find all professionals by latitude and longitude
+
+2. Find all professional by specific types
+
+3. Security
+
+
+
 
