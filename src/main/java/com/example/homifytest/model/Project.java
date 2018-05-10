@@ -16,7 +16,7 @@ private String types;
 public Project(String header, String title, String description, String duration, String types) {
 	super();
 	this.header      = header;
-	this.title       = name;
+	this.title       = title;
 	this.description = description;
 	this.duration    = duration;
 	this.types       = types;
